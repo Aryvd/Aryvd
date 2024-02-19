@@ -1,3 +1,6 @@
+![image](https://github.com/Aryvd/Aryvd/assets/72273892/aa26466b-090a-4c9c-9cb5-1aedcc2a6b0c)
+
+
 In this challenge, the goal is to find the hidden message in an image. A zip containing a folder with 1000 greyscale images and a script named prng.py is given. The challenge description and the hint allude to a well-known Steg algorithm called F5. F5 does a lot of complicated math to hide the data, but most importantly, it operates on the dct coefficients of a jpeg image and due to the way it is implemented, increases the number of zeroes in the whole image dct matrix (this is called shrinkage, hence the hint *shrink*). We use this property to find the image containing the hidden data among the 1000 images. It turns out the 5613721136707.jpg is the file with a different higher number of zeroes than the rest. 
 
 ![image](https://github.com/Aryvd/Aryvd/assets/72273892/390af731-7101-4aaf-b2f3-27b6595b31d8)
